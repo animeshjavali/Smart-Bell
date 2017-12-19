@@ -21,17 +21,14 @@ void loop() {
    {
     Serial.println("ATD9535939***;"); // Place call at the required time.
     delay(25000);
- Serial.println("ATH");// Auto-Hang up the call.
- Serial.println("AT+CMGF=1");
-  delay(5000);
-   Serial.print("AT+CMGS=\"");
-  Serial.print("95359395***");
-  Serial.println("\"");
-  delay(2000);
-  Serial.print("Good evening mam. Your class for 7TH sem starts in 5 mins");// The text message.
-  Serial.write(0x1A);
-  
+    Serial.println("ATH");// Auto-Hang up the call.
+    Serial.println("AT+CMGF=1");
+    delay(5000);
+    Serial.print("AT+CMGS=\"");
+    Serial.print("95359395***");
+    Serial.println("\"");
+    delay(2000);
+    Serial.print("Good evening mam. Your class for 7TH sem starts in 5 mins");// The text message.
+    Serial.write(0x1A);
     }
- 
-  
 }
